@@ -6,6 +6,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: say-it-in-japanese
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-java@v4
@@ -17,4 +20,4 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: say-it-in-japanese-jar
-          path: build/libs/*.jar
+          path: say-it-in-japanese/build/libs/*.jar
