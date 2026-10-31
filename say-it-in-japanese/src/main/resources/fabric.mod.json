@@ -1,0 +1,26 @@
+{
+	"schemaVersion": 1,
+	"id": "sayitinjapanese",
+	"version": "${version}",
+	"name": "Say It In Japanese",
+	"description": "Every time you pick up an item you have to say its name out loud in Japanese, or it gets deleted. Display as Kanji, Hiragana or Romaji.",
+	"authors": [
+		"You"
+	],
+	"license": "MIT",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"dev.sayitinjapanese.SayItInJapanese"
+		],
+		"client": [
+			"dev.sayitinjapanese.client.SayItInJapaneseClient"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.20.1",
+		"minecraft": "~26.2",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
