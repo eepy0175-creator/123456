@@ -14,6 +14,8 @@ public class SayItInJapaneseClient implements ClientModInitializer {
 
 	@Override
 	public void onInitializeClient() {
+		System.setProperty("jna.encoding", "UTF-8");
+		
 		Config.load();
 
 		ClientTickEvents.END_CLIENT_TICK.register(Challenges::tick);
