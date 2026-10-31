@@ -61,7 +61,7 @@ final class Speech {
 	}
 
 	/** Opens the microphone and starts recognising. Throws if no usable microphone exists. */
-	static void start(String micHint) throws LineUnavailableException {
+	static void start(String micHint) throws LineUnavailableException, IOException {
 		synchronized (LOCK) {
 			stopLocked();
 			TargetDataLine l = openLine(micHint);
