@@ -30,6 +30,7 @@ dependencies {
 			"com.alphacephei:vosk:${project.vosk_version}",
 			"net.java.dev.jna:jna:${project.jna_version}",
 			"com.atilika.kuromoji:kuromoji-ipadic:${project.kuromoji_version}",
+		    "com.atilika.kuromoji:kuromoji-core:${project.kuromoji_version}",
 	]) {
 		implementation dep
 		clientImplementation dep
