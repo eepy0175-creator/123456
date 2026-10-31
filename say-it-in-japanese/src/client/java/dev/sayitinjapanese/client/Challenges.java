@@ -147,7 +147,7 @@ final class Challenges {
 			baseline = now;
 			return;
 		}
-		boolean armed = mc.gui.screen == null && !(cfg.skipCreative && p.isCreative());
+		boolean armed = mc.gui.screen() == null && !(cfg.skipCreative && p.isCreative());
 		if (armed) {
 			for (Map.Entry<Item, Integer> e : now.entrySet()) {
 				int gained = e.getValue() - baseline.getOrDefault(e.getKey(), 0);
